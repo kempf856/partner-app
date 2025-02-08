@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Partner
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/partner}
+    driver-class-name: org.postgresql.Driver
+    username: ${SPRING_DATASOURCE_USERNAME:partner}
+    password: ${SPRING_DATASOURCE_PASSWORD:partner}
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+
+security:
+  jwt:
+    secret: széphosszúésbiztonságossecret
+    expiration: 3600000
