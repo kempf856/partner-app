@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-class PartnerWebMvcTest extends BaseWebMvcTest {
+class PartnerITest extends BaseWebMvcTest {
 
     private static final String PARTNER_EMAIL = "elek@mail.com";
     private static final String ADDRESS_STREET = "hosszúutca";
